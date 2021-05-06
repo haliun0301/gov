@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+
+.btn-white{
+    @apply mt-4 text-gray-900 bg-gray-200 py-2 px-4 uppercase rounded-md shadow-lg font-semibold text-sm;
+}
+
+.btn-white:hover {
+    @apply bg-gray-400; 
+}
+.hero {
+    z-index: -10;
+}
+.header {
+    height: 400px;
+}
+.card {
+    height: 260px;
+    width: 180px;
+}
+.card-container {
+    @apply flex flex-shrink-0 pb-6;
+}
+.card-link {
+    @apply relative block mx-2;
+}
+.card-content {
+    @apply p-4 absolute inset-0 bg-black opacity-75 hidden flex-col justify-end text-white cursor-pointer;
+}
+.card-title {
+    @apply text-2xl mb-2;
+}
+.card-text{
+    @apply leading-normal select-none;
+}
+.trailer {
+    height: auto;
+}
+.btn-primary{
+    @apply bg-transparent uppercase border border-yellow-600 text-yellow-600 py-3 px-3 inline-block; 
+}
+.btn-primary:hover {
+    @apply bg-yellow-600 text-white cursor-pointer;
+}
+
+@screen md {
+    .header{
+       height: 560px;
+    }
+    .trailer {
+        height: 700px;
+    }
+    .trail {
+        margin-top: 256px;
+    }
+}
+@screen sm {
+    .btn-white:focus{
+        @apply mt-8;
+    }
+}
+@tailwind utilities;
